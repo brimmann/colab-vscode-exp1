@@ -1,0 +1,5 @@
+{
+    "python.languageServer": "Jedi",
+    "python.linting.enabled": false,
+    "problems.showCurrentInStatus": false
+}
