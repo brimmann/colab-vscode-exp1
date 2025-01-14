@@ -3,4 +3,5 @@ from tensorflow.keras.datasets import mnist
 import matplotlib.pyplot as plt
 
 # Load the dataset
-(train_images, train_labels), (test_images, test_labels) = mnist.load_data()
+def load_dataset():
+    (train_images, train_labels), (test_images, test_labels) = mnist.load_data()
