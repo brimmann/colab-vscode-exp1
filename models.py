@@ -8,14 +8,13 @@ def get_model1():
     x = Flatten(name='flatten_layer')(inputs)
     x = Dense(128, activation='relu', name='hidden_dense')(x)
     outputs = Dense(10, activation='softmax', name='output_layer')(x)
-    return Model(inputs=inputs, outputs=outputs, name='functional_model')
+    return Model(inputs=inputs, outputs=outputs, name='functional_model_1')
 
 def get_model2():
     inputs = Input(shape=(28, 28), name='input_layer')
     x = Flatten(name='flatten_layer')(inputs)
-    x = Dense(128, activation='relu', name='hidden_dense')(x)
     outputs = Dense(10, activation='softmax', name='output_layer')(x)
-    return Model(inputs=inputs, outputs=outputs, name='functional_model')
+    return Model(inputs=inputs, outputs=outputs, name='functional_model_2')
 
 def compile_model(model):
     model.compile(optimizer='adam',
